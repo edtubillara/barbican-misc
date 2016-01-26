@@ -7,7 +7,7 @@ export DEBIAN_FRONTEND=noninteractive
 sudo rm -rf /usr/local/bin/barbicancopy
 sudo cat <<EOF | sudo tee -a /usr/local/bin/barbicancopy
 #!/bin/bash
-cp -TRv /tmp/barbican/barbican /opt/stack/barbican
+rsync -avhpI /tmp/barbican/barbican /opt/stack/barbican
 EOF
 
 sudo chmod 770 /usr/local/bin/barbicancopy
