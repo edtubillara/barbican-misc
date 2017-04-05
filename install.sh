@@ -3,16 +3,6 @@
 set -e
 export DEBIAN_FRONTEND=noninteractive
 
-
-sudo rm -rf /usr/local/bin/barbicancopy
-sudo cat <<EOF | sudo tee -a /usr/local/bin/barbicancopy
-#!/bin/bash
-rsync -avhpI /tmp/barbican/barbican /opt/stack/barbican
-EOF
-
-sudo chmod 770 /usr/local/bin/barbicancopy
-sudo chown vagrant:vagrant /usr/local/bin/barbicancopy
-
 # Install Packages for Development
 sudo apt-get update -y
 sudo apt-get upgrade -y
