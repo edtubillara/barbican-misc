@@ -23,8 +23,8 @@ sudo apt-get install -y vim
 sudo apt-get install -y git-review
 sudo apt-get install -y python-pip
 sudo apt-get install -y python2.7-dev
-sudo apt-get install -y python3.4
-sudo apt-get install -y python3.4-dev
+sudo apt-get install -y python3.5
+sudo apt-get install -y python3.5-dev
 sudo apt-get install -y python-tox
 sudo apt-get install -y libssl-dev
 sudo apt-get install -y libffi-dev
